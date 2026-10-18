@@ -1,4 +1,4 @@
-import { ArrowUpRight, Layers3 } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Layers3 } from "lucide-react";
 import PrimaryButton from "../buttons/primary-button";
 
 export function Contact() {
@@ -31,7 +31,7 @@ export function Contact() {
             hello@unicusdnl.com
             <ArrowUpRight size={16} />
           </a>
-          <PrimaryButton href="mailto:hello@unicusdnl.com">
+          <PrimaryButton imageSrc={<ArrowRight/>} href="mailto:hello@unicusdnl.com">
             Contact Unicus
           </PrimaryButton>
         </div>
