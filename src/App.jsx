@@ -8,7 +8,7 @@ import { TrustStrip } from "./components/pages/trust-strip";
 
 export default function App() {
   return (
-    <main className="min-h-screen bg-slate-950 font-sans text-white antialiased">
+    <main className="min-h-screen bg-[#014751] font-sans text-white antialiased">
       <div className="px-2 pt-2 sm:px-4 sm:pt-4">
       <Hero />
       </div>

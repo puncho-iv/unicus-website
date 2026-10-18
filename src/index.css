@@ -22,7 +22,7 @@
 }
 
 :root {
-  --primary-color: #006a6f;
+  --primary-color: #014751;
   --dark-primary: #003133;
   --primary-color-2: #006a6f;
   --primary-color-lighter: #B5EFF7;
@@ -60,7 +60,7 @@
 
   --text-unselect: #212121;
 
-  --text-color-100: #181c32;
+  --text-color: #dafe2a;
   --text-color-90: #4f4b5c;
   --text-color-80: #5e6278;
   --text-color-50: #7e8299;
