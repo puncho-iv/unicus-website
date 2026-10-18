@@ -37,7 +37,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="border-t border-white/[0.06] bg-[#080d19] px-5 py-20 sm:px-8 sm:py-28"
+      className="border-t border-white/[0.06] bg-[--primary-color] px-5 py-20 sm:px-8 sm:py-28"
     >
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
@@ -46,13 +46,13 @@ export function Services() {
               What We Do
             </p>
             <h2 className="max-w-2xl text-3xl font-semibold leading-tight tracking-[-0.045em] text-white sm:text-5xl">
-              Everything your business needs to move forward.
+              Your Complete Toolkit for Business Growth.
             </h2>
           </div>
-          <p className="max-w-md text-sm leading-7 text-slate-400">
+          {/* <p className="max-w-md text-sm leading-7 text-slate-400">
             From day-to-day operations to your next big digital idea, we build
             tools that solve real business problems.
-          </p>
+          </p> */}
         </div>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2">

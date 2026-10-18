@@ -5,7 +5,7 @@ export function Solutions() {
   return (
     <section
       id="solutions"
-      className="bg-slate-950 px-5 py-20 sm:px-8 sm:py-24"
+      className="bg-[--primary-color] px-5 py-20 sm:px-8 sm:py-24"
     >
       <div className="mx-auto grid max-w-7xl gap-10 rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900 to-slate-950 p-7 sm:p-10 lg:grid-cols-2 lg:items-center lg:p-14">
         <div>

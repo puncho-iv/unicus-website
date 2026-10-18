@@ -27,12 +27,14 @@ const PrimaryButton = ({
       onClick={onClick}
       disabled={disabled}
       className={cn(
-        "bg-red-500 h-12  rounded-full text-[14px]  hover:bg-red-400 text-white transition-colors flex items-center gap-1 px-8",
+        "bg-red-500 h-12 gap-2  rounded-full text-[14px]  hover:bg-red-400 text-white transition-colors flex items-center gap-1 px-8",
         className,
       )}
     >
-              {children}
-      {imageSrc}
+    {children}
+    <span className="bg-white rounded-full p-1">
+          {imageSrc}
+    </span>
 
     </Button>
   );

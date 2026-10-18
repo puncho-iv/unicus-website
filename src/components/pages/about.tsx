@@ -20,7 +20,7 @@ const capabilities = [
 
 export function About() {
   return (
-    <section id="about" className="bg-slate-950 px-5 py-20 sm:px-8 sm:py-28">
+    <section id="about" className="bg-[--pri] px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center lg:gap-20">
         <div>
           <p className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-red-400">
@@ -28,9 +28,9 @@ export function About() {
           </p>
 
           <h2 className="max-w-xl text-3xl font-semibold leading-tight tracking-[-0.045em] text-white sm:text-5xl">
-            Technology should work for your business.
+            Your business.Your Advantage
             <span className="text-slate-500">
-              {" "}Not the other way around.
+              {" "}Technology that serves you.
             </span>
           </h2>
 

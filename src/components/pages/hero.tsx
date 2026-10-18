@@ -25,7 +25,7 @@ export function Hero() {
             Technology. Business. Growth.
           </div>
 
-          <h1 className="text-4xl text-[--text-color] font-semibold leading-[1.12] tracking-[-0.055em] text-white sm:text-6xl lg:text-7xl">
+          <h1 className="text-4xl font-archivo text-[--text-color] font-semibold leading-[1.12] tracking-[-0.055em] text-white sm:text-6xl lg:text-7xl">
             Build smarter.
             <br />
             <span className="unicus-gradient-text">

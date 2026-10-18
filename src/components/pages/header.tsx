@@ -1,4 +1,4 @@
-import { ArrowUpRight, Layers3, Menu, X } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Layers3, Menu, X } from "lucide-react";
 import { useState } from "react";
 import PrimaryButton from "../buttons/primary-button";
 
@@ -37,7 +37,7 @@ export function Header() {
         </div>
 
         <div className="hidden md:block">
-          <PrimaryButton imageSrc={<ArrowUpRight />} href="#contact">Let's Talk</PrimaryButton>
+          <PrimaryButton imageSrc={<ArrowRight color="black" />} href="#contact">Let's Talk</PrimaryButton>
         </div>
 
         <button
