@@ -1,4 +1,13 @@
-import { ArrowUpRight, CheckCircle2, Code2, Globe, ShoppingCart, Sparkles, Users } from "lucide-react";
+import {
+    ArrowRight,
+  ArrowUpRight,
+  CheckCircle2,
+  Code2,
+  Globe,
+  ShoppingCart,
+  Sparkles,
+  Users,
+} from "lucide-react";
 import { Header } from "./header";
 import { ProductPreview } from "./product-preview";
 import OutlineButton from "../buttons/outline-button";
@@ -22,29 +31,28 @@ export function Hero() {
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-slate-300 backdrop-blur">
             <Sparkles size={14} className="text-red-400" />
-            Technology. Business. Growth.
+            Technology. Commerce. Logistics.
           </div>
 
           <h1 className="text-4xl font-archivo text-[--text-color] font-semibold leading-[1.12] tracking-[-0.055em] text-white sm:text-6xl lg:text-7xl">
-            Build smarter.
+            Designed For Efficiency
             <br />
-            <span className="unicus-gradient-text">
-              Grow without limits.
-            </span>
+            {/* <span className="unicus-gradient-text">For Efficiency</span> */}
           </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base sm:leading-8">
-            We build digital solutions that simplify business operations,
-            connect your data, and help your company move forward — from HR
-            and payroll to POS, e-commerce, and custom software.
-          </p>
+<p className="mx-auto mt-4 max-w-2xl text-sm leading-5 text-slate-300 sm:text-base sm:leading-6">
+  A single, secure internal platform built for streamlining your
+  business to success. No more switching tabs, re-entering data, or
+  chasing down updates across five different tools.
+</p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <PrimaryButton href="#about" imageSrc={<ArrowUpRight />} >
-               Explore Our Solutions
+            <PrimaryButton href="#about" imageSrc={<ArrowRight color="black" />}>
+              Explore Our Solutions
             </PrimaryButton>
-             <OutlineButton href="#services" imageSrc={<ArrowUpRight />}>Discover Unicus</OutlineButton>
-           
+            <OutlineButton href="#services" imageSrc={<ArrowRight />}>
+              Discover Unicus
+            </OutlineButton>
           </div>
         </div>
 
@@ -53,28 +61,28 @@ export function Hero() {
             icon={Users}
             label="Human Resources"
             title="HR & Payroll"
-            detail="People, attendance and workforce operations."
+            detail=""
             className="lg:-translate-y-3"
           />
           <ProductPreview
             icon={ShoppingCart}
             label="Retail & Hospitality"
             title="Smart POS"
-            detail="Orders, stock and sales management."
+            detail=""
             className="lg:translate-y-5"
           />
           <ProductPreview
             icon={Globe}
             label="Digital Commerce"
             title="E-commerce"
-            detail="Products, online orders and digital sales."
+            detail=""
             className="lg:-translate-y-1"
           />
           <ProductPreview
             icon={Code2}
             label="Business Technology"
             title="Custom Apps"
-            detail="Software built around your business."
+            detail=""
             className="lg:translate-y-3"
           />
         </div>

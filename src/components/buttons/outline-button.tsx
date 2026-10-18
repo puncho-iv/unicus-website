@@ -26,7 +26,7 @@ const OutlineButton = ({
       onClick={onClick}
       disabled={disabled}
       className={cn(
-        "bg-none border border-red-500 h-12 rounded-full hover:bg-red-500 hover:border-none text-[14px] transition-colors flex items-center gap-1 px-8",
+        "bg-none border border-[--text-color] h-12 rounded-full hover:bg-red-500 hover:border-none text-[14px] transition-colors flex items-center gap-1 px-8",
         className,
       )}
     >
