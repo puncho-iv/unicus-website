@@ -31,7 +31,7 @@ export function Contact() {
             hello@unicusdnl.com
             <ArrowUpRight size={16} />
           </a>
-          <PrimaryButton imageSrc={<ArrowRight/>} href="mailto:hello@unicusdnl.com">
+          <PrimaryButton imageSrc={<ArrowRight className="text-slate-500" />} href="mailto:unicusdnl@gmail.com">
             Contact Unicus
           </PrimaryButton>
         </div>

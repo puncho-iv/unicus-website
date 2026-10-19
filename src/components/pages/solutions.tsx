@@ -1,4 +1,4 @@
-import { BarChart3, Clock3, Code2, Wallet } from "lucide-react";
+import { ArrowRight, BarChart3, Clock3, Code2, Wallet } from "lucide-react";
 import PrimaryButton from "../buttons/primary-button";
 
 export function Solutions() {
@@ -9,7 +9,7 @@ export function Solutions() {
     >
       <div className="mx-auto grid max-w-7xl gap-10 rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900 to-slate-950 p-7 sm:p-10 lg:grid-cols-2 lg:items-center lg:p-14">
         <div>
-          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-red-400">
+          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-[--text-color]">
             One partner. Multiple possibilities.
           </p>
           <h2 className="text-3xl font-semibold leading-tight tracking-[-0.045em] text-white sm:text-4xl">
@@ -21,7 +21,7 @@ export function Solutions() {
             your business needs.
           </p>
           <div className="mt-7">
-            <PrimaryButton href="#contact">Start a Conversation</PrimaryButton>
+            <PrimaryButton href="#contact" imageSrc={<ArrowRight className="text-slate-500" />}>Start a Conversation</PrimaryButton>
           </div>
         </div>
 
@@ -38,7 +38,7 @@ export function Solutions() {
                 key={item.title}
                 className="rounded-2xl border border-white/10 bg-black/20 p-5"
               >
-                <Icon size={20} className="text-red-400" />
+                <Icon size={20} className="text-[--text-color]" />
                 <h3 className="mt-4 text-sm font-semibold text-white">
                   {item.title}
                 </h3>

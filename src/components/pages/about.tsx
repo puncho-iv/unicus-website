@@ -1,4 +1,4 @@
-import { ArrowRight, BarChart3, Database, MonitorSmartphone, Sparkles } from "lucide-react";
+import { ArrowRight, BarChart3, Database, MonitorSmartphone, Sparkles, Store } from "lucide-react";
 
 const capabilities = [
   {
@@ -23,7 +23,7 @@ export function About() {
     <section id="about" className="bg-[--pri] px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center lg:gap-20">
         <div>
-          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-red-400">
+          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-[--text-color]">
             About Unicus
           </p>
 
@@ -59,12 +59,12 @@ export function About() {
                   Practical solutions. Meaningful impact.
                 </h3>
               </div>
-              <div className="rounded-xl bg-red-500 p-3 text-white">
-                <Sparkles size={22} />
+              <div className="rounded-xl bg-[--text-color] p-3 text-white">
+            <Store className="text-slate-400" size={22} />
               </div>
             </div>
             <div className="mt-8 h-1.5 overflow-hidden rounded-full bg-white/10">
-              <div className="h-full w-3/4 rounded-full bg-red-500" />
+              <div className="h-full w-3/4 rounded-full bg-[--text-color]" />
             </div>
             <p className="mt-3 text-xs text-slate-400">
               From business needs to usable digital products.
@@ -78,7 +78,7 @@ export function About() {
                 key={item.title}
                 className="rounded-2xl border border-white/10 bg-slate-900/70 p-5"
               >
-                <Icon size={22} className="text-red-400" />
+                <Icon size={22} className="text-[--text-color]" />
                 <h3 className="mt-5 font-semibold text-white">{item.title}</h3>
                 <p className="mt-2 text-xs leading-6 text-slate-400">
                   {item.text}

@@ -1,5 +1,5 @@
 import {
-    ArrowRight,
+  ArrowRight,
   ArrowUpRight,
   CheckCircle2,
   Code2,
@@ -30,24 +30,27 @@ export function Hero() {
       <div className="mx-auto max-w-7xl px-5 pb-16 pt-14 sm:px-8 sm:pb-20 sm:pt-20 lg:px-12 lg:pb-24">
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-slate-300 backdrop-blur">
-            <Sparkles size={14} className="text-red-400" />
-            Technology. Commerce. Logistics.
+            {/* <Sparkles size={14} className="text-red-400" /> */}
+            Technology. Commerce. Logistics
           </div>
 
           <h1 className="text-4xl font-archivo text-[--text-color] font-semibold leading-[1.12] tracking-[-0.055em] text-white sm:text-6xl lg:text-7xl">
             Designed For Efficiency
-            <br />
+            {/* <br /> */}
             {/* <span className="unicus-gradient-text">For Efficiency</span> */}
           </h1>
 
-<p className="mx-auto mt-4 max-w-2xl text-sm leading-5 text-slate-300 sm:text-base sm:leading-6">
-  A single, secure internal platform built for streamlining your
-  business to success. No more switching tabs, re-entering data, or
-  chasing down updates across five different tools.
-</p>
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-5 text-slate-300 sm:text-base sm:leading-6">
+            A single, secure internal platform built for streamlining your
+            business to success. No more switching tabs, re-entering data, or
+            chasing down updates across five different tools.
+          </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <PrimaryButton href="#about" imageSrc={<ArrowRight color="black" />}>
+            <PrimaryButton
+              href="#about"
+              imageSrc={<ArrowRight color="black" />}
+            >
               Explore Our Solutions
             </PrimaryButton>
             <OutlineButton href="#services" imageSrc={<ArrowRight />}>
@@ -89,15 +92,15 @@ export function Hero() {
 
         <div className="mt-12 flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-xs text-slate-400">
           <span className="flex items-center gap-2">
-            <CheckCircle2 size={15} className="text-red-400" />
+            <CheckCircle2 size={15} className="text-[--text-color]" />
             Business-focused
           </span>
           <span className="flex items-center gap-2">
-            <CheckCircle2 size={15} className="text-red-400" />
+            <CheckCircle2 size={15} className="text-[--text-color]" />
             Built to scale
           </span>
           <span className="flex items-center gap-2">
-            <CheckCircle2 size={15} className="text-red-400" />
+            <CheckCircle2 size={15} className="text-[--text-color]" />
             Practical technology
           </span>
         </div>

@@ -42,7 +42,7 @@ export function Services() {
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-red-400">
+            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-[--text-color]">
               What We Do
             </p>
             <h2 className="max-w-2xl text-3xl font-semibold leading-tight tracking-[-0.045em] text-white sm:text-5xl">
@@ -61,10 +61,10 @@ export function Services() {
             return (
               <article
                 key={service.number}
-                className="group rounded-3xl border border-white/10 bg-slate-900/60 p-6 transition duration-300 hover:-translate-y-1 hover:border-red-500/50 hover:bg-slate-900 sm:p-8"
+                className="group rounded-3xl border border-white/10 bg-slate-900/60 p-6 transition duration-300 hover:-translate-y-1 hover:border-[--text-color-50] hover:bg-slate-900 sm:p-8"
               >
                 <div className="flex items-start justify-between">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-red-500/10 text-red-400 ring-1 ring-red-500/20 transition group-hover:bg-red-500 group-hover:text-white">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-red-500/10 text-[--text-color] ring-1 ring-red-500/20 transition group-hover:bg-[--text-color-50] group-hover:text-slate-500">
                     <Icon size={23} />
                   </div>
                   <span className="text-xs text-slate-600">

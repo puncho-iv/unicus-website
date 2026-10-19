@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
@@ -26,12 +27,17 @@ const OutlineButton = ({
       onClick={onClick}
       disabled={disabled}
       className={cn(
-        "bg-none border border-[--text-color] h-12 rounded-full hover:bg-red-500 hover:border-none text-[14px] transition-colors flex items-center gap-1 px-8",
+        "group flex h-12 px-8 items-center gap-2 rounded-full border border-[var(--text-color)] bg-transparent px-8 text-[14px] transition-colors hover:border-[--text-color] hover:text-slate-600 hover:bg-[--text-color]",
         className,
       )}
     >
-      {children}
-      {imageSrc}
+      <span>{children}</span>
+
+      {imageSrc && (
+        <span className="inline-flex transition-transform duration-300 ease-out group-hover:translate-x-1">
+          {imageSrc}
+        </span>
+      )}
     </Button>
   );
 
