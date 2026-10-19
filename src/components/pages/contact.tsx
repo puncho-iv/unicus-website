@@ -10,14 +10,13 @@ export function Contact() {
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 md:flex-row md:items-center">
         <div>
           <a href="#home" className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-red-500 text-white">
-              <Layers3 size={20} />
-            </span>
-            <span className="text-xl font-bold text-white">
-              Unicus<span className="text-red-400">.</span>
-            </span>
+            <img
+              src="/logo.png"
+              alt="Unicus"
+              className="min-h-[120px] w-[140px]  sm:h-10"
+            />
           </a>
-          <p className="mt-4 max-w-md text-sm leading-6 text-slate-400">
+          <p className=" max-w-md text-sm leading-6 text-slate-400">
             Smart digital solutions for businesses ready to work better and
             grow.
           </p>
@@ -31,7 +30,10 @@ export function Contact() {
             hello@unicusdnl.com
             <ArrowUpRight size={16} />
           </a>
-          <PrimaryButton imageSrc={<ArrowRight className="text-slate-500" />} href="mailto:unicusdnl@gmail.com">
+          <PrimaryButton
+            imageSrc={<ArrowRight className="text-slate-500" />}
+            href="mailto:unicusdnl@gmail.com"
+          >
             Contact Unicus
           </PrimaryButton>
         </div>

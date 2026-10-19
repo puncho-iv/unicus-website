@@ -1,11 +1,9 @@
 import {
   ArrowRight,
-  ArrowUpRight,
   CheckCircle2,
   Code2,
   Globe,
   ShoppingCart,
-  Sparkles,
   Users,
 } from "lucide-react";
 import { Header } from "./header";
@@ -19,6 +17,7 @@ export function Hero() {
       id="home"
       className="unicus-hero relative isolate overflow-hidden rounded-[26px] border border-white/10"
     >
+      {/* Background effects */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute -right-20 top-0 h-96 w-96 rounded-full bg-blue-500/20 blur-[100px]" />
         <div className="absolute -left-20 bottom-0 h-80 w-80 rounded-full bg-red-500/10 blur-[100px]" />
@@ -29,23 +28,34 @@ export function Hero() {
 
       <div className="mx-auto max-w-7xl px-5 pb-16 pt-14 sm:px-8 sm:pb-20 sm:pt-20 lg:px-12 lg:pb-24">
         <div className="mx-auto max-w-4xl text-center">
-          <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-slate-300 backdrop-blur">
-            {/* <Sparkles size={14} className="text-red-400" /> */}
-            Technology. Commerce. Logistics
+          {/* Category badges */}
+          <div className="mb-7 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+            {["Technology", "Commerce", "Logistics"].map((item) => (
+              <span
+                key={item}
+                className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-slate-300 backdrop-blur"
+              >
+                {item}
+              </span>
+            ))}
           </div>
 
-          <h1 className="text-4xl font-archivo text-[--text-color] font-semibold leading-[1.12] tracking-[-0.055em] text-white sm:text-6xl lg:text-7xl">
-            Designed For Efficiency
-            {/* <br /> */}
-            {/* <span className="unicus-gradient-text">For Efficiency</span> */}
+          {/* Main heading */}
+          <h1 className="font-archivo text-4xl font-semibold leading-[1.12] tracking-[-0.055em] text-white sm:text-6xl lg:text-7xl">
+            Designed for{" "}
+            <span className="unicus-gradient-text">
+              Efficiency
+            </span>
           </h1>
 
-          <p className="mx-auto mt-4 max-w-2xl text-sm leading-5 text-slate-300 sm:text-base sm:leading-6">
-            A single, secure internal platform built for streamlining your
-            business to success. No more switching tabs, re-entering data, or
-            chasing down updates across five different tools.
+          {/* Description */}
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-slate-300 sm:text-base sm:leading-7">
+            A single, secure platform built to streamline your business
+            operations and drive success. No more switching tabs, re-entering
+            data, or chasing updates across multiple tools.
           </p>
 
+          {/* Call-to-action buttons */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <PrimaryButton
               href="#about"
@@ -53,13 +63,18 @@ export function Hero() {
             >
               Explore Our Solutions
             </PrimaryButton>
-            <OutlineButton href="#services" imageSrc={<ArrowRight />}>
+
+            <OutlineButton
+              href="#services"
+              imageSrc={<ArrowRight />}
+            >
               Discover Unicus
             </OutlineButton>
           </div>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Product cards */}
+        <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <ProductPreview
             icon={Users}
             label="Human Resources"
@@ -67,6 +82,7 @@ export function Hero() {
             detail=""
             className="lg:-translate-y-3"
           />
+
           <ProductPreview
             icon={ShoppingCart}
             label="Retail & Hospitality"
@@ -74,6 +90,7 @@ export function Hero() {
             detail=""
             className="lg:translate-y-5"
           />
+
           <ProductPreview
             icon={Globe}
             label="Digital Commerce"
@@ -81,6 +98,7 @@ export function Hero() {
             detail=""
             className="lg:-translate-y-1"
           />
+
           <ProductPreview
             icon={Code2}
             label="Business Technology"
@@ -90,19 +108,21 @@ export function Hero() {
           />
         </div>
 
+        {/* Value propositions */}
         <div className="mt-12 flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-xs text-slate-400">
-          <span className="flex items-center gap-2">
-            <CheckCircle2 size={15} className="text-[--text-color]" />
-            Business-focused
-          </span>
-          <span className="flex items-center gap-2">
-            <CheckCircle2 size={15} className="text-[--text-color]" />
-            Built to scale
-          </span>
-          <span className="flex items-center gap-2">
-            <CheckCircle2 size={15} className="text-[--text-color]" />
-            Practical technology
-          </span>
+          {[
+            "Business-focused",
+            "Built to scale",
+            "Practical technology",
+          ].map((item) => (
+            <span key={item} className="flex items-center gap-2">
+              <CheckCircle2
+                size={15}
+                className="shrink-0 text-[--text-color]"
+              />
+              {item}
+            </span>
+          ))}
         </div>
       </div>
     </section>

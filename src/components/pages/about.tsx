@@ -28,7 +28,7 @@ export function About() {
           </p>
 
           <h2 className="max-w-xl text-3xl font-semibold leading-tight tracking-[-0.045em] text-white sm:text-5xl">
-            Your business.Your Advantage
+            Your business.Your Advantage:
             <span className="text-slate-500">
               {" "}Technology that serves you.
             </span>
