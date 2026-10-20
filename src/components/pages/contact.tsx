@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUpRight, Layers3 } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import PrimaryButton from "../buttons/primary-button";
 
 export function Contact() {

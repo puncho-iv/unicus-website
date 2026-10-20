@@ -2,6 +2,7 @@
 import { ArrowRight, Menu, X } from "lucide-react";
 import { useState } from "react";
 import PrimaryButton from "../buttons/primary-button";
+import OutlineButton from "../buttons/outline-button";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -56,16 +57,16 @@ export function Header() {
         </div>
 
         {/* Mobile menu toggle */}
-        <button
-          type="button"
+        <OutlineButton
+
           aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={menuOpen}
           aria-controls="mobile-navigation"
           onClick={() => setMenuOpen((open) => !open)}
-          className="rounded-lg border border-white/10 p-2 text-white transition hover:bg-white/5 md:hidden"
+          className="rounded-lg w-10 h-10 border border-white/10 p-2 text-white transition hover:bg-white/5 md:hidden"
         >
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
-        </button>
+        </OutlineButton>
       </nav>
 
       {/* Mobile navigation */}
@@ -80,14 +81,14 @@ export function Header() {
                 key={link.label}
                 href={link.href}
                 onClick={closeMenu}
-                className="rounded-lg px-4 py-3 text-sm text-slate-200 transition hover:bg-white/5 hover:text-white"
+                className="rounded-lg px-4  py-3 text-sm text-slate-200 transition hover:bg-white/5 hover:text-white"
               >
                 {link.label}
               </a>
             ))}
           </div>
 
-          <div className="mt-3 border-t border-white/10 pt-4">
+          <div className="mt-3 border-t border-white/10 pt-4 ">
             <PrimaryButton
               href="#contact"
               imageSrc={<ArrowRight size={16} color="black" />}
