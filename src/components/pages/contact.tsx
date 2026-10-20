@@ -32,7 +32,7 @@ export function Contact() {
           </a>
           <PrimaryButton
             imageSrc={<ArrowRight className="text-slate-500" />}
-            href="mailto:unicusdnl@gmail.com"
+            href="mailto:hello@unicusdnl.com"
           >
             Contact Unicus
           </PrimaryButton>
