@@ -23,12 +23,12 @@ export function Header() {
           href="#home"
           aria-label="Unicus home"
           onClick={closeMenu}
-          className="flex shrink-0 items-center"
+          className="flex shrink-0 items-center relative"
         >
           <img
             src="/logo.png"
             alt="Unicus"
-            className="min-h-[120px] w-[140px]  sm:h-10"
+            className="min-h-[120px] w-[130px]  sm:h-10"
           />
         </a>
 
