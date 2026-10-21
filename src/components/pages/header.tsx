@@ -27,9 +27,9 @@ export function Header() {
           className="flex shrink-0 items-center relative"
         >
           <img
-            src="/logo.png"
+            src="/unicus_logo.png"
             alt="Unicus"
-            className="min-h-[120px] w-[130px]  sm:h-10"
+            className="min-h-[140px] w-[150px]  sm:h-10"
           />
         </a>
 

@@ -11,7 +11,7 @@ export function Contact() {
         <div>
           <a href="#home" className="flex items-center gap-2.5">
             <img
-              src="/logo.png"
+              src="/unicus_logo.png"
               alt="Unicus"
               className="min-h-[120px] w-[140px]  sm:h-10"
             />
