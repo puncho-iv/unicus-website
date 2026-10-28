@@ -1,4 +1,3 @@
-
 import { ArrowRight, Menu, X } from "lucide-react";
 import { useState } from "react";
 import PrimaryButton from "../buttons/primary-button";
@@ -24,12 +23,12 @@ export function Header() {
           href="#home"
           aria-label="Unicus home"
           onClick={closeMenu}
-          className="flex shrink-0 items-center relative"
+          className="flex h-full shrink-0 items-center"
         >
           <img
             src="/unicus_logo.png"
             alt="Unicus"
-            className="min-h-[140px] w-[150px]  sm:h-10"
+            className="block h-36 w-auto object-contain sm:h-40 lg:h-32"
           />
         </a>
 
@@ -58,8 +57,9 @@ export function Header() {
 
         {/* Mobile menu toggle */}
         <OutlineButton
-
-          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-label={
+            menuOpen ? "Close navigation menu" : "Open navigation menu"
+          }
           aria-expanded={menuOpen}
           aria-controls="mobile-navigation"
           onClick={() => setMenuOpen((open) => !open)}

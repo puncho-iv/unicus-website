@@ -9,11 +9,11 @@ export function Contact() {
     >
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 md:flex-row md:items-center">
         <div>
-          <a href="#home" className="flex items-center gap-2.5">
+          <a href="#home" className="flex shrink-0 items-center gap-2.5">
             <img
               src="/unicus_logo.png"
               alt="Unicus"
-              className="min-h-[120px] w-[140px]  sm:h-10"
+              className="h-32 w-auto object-contain sm:h-36 lg:h-40"
             />
           </a>
           <p className=" max-w-md text-sm leading-6 text-slate-400">
